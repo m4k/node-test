@@ -1,14 +1,14 @@
 var fs = require('fs'),
-http = require('http'),
-url = require('url'),
-path = require('path');
+    http = require('http'),
+    url = require('url'),
+    path = require('path');
 
 http.createServer((req, res)=>{
-  if (req.url !== '/englishNetflix.mp4') {
+  if (req.url != '/englishNetflix.mp4') {
     res.writeHead(200, {"Content-Type": "text/html"});
-    res.end('<video src="http://localhost:3000/englishNetflix.mp4" controls></video>')
+    res.end('<video src="http://localhost:8080/englishNetflix.mp4" controls></video>');
   }else {
-    var file = path.resolve(__dirname, "englishNetflix.mp4");
+    var file = path.resolve( __dirname, "englishNetflix.mp4");
     var range = req.headers.renge;
     var position = renge.replace('/bytes=/', "").split('-');
     var start = parseInt(positions[0], 10);
@@ -31,7 +31,7 @@ http.createServer((req, res)=>{
       })
       .on('error', (err)=>{
         res.end(err);
-      })
-    })
+      });
+    });
   }
-}).listen(3000);
+}).listen(8080);

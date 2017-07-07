@@ -1,0 +1,23 @@
+{
+  "name": "streaming-2",
+  "version": "1.0.1",
+  "description": "sistema de streaming part2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4k/node-test.git"
+  },
+  "keywords": [
+    "video",
+    "streaming"
+  ],
+  "author": "Marcos Eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m4k/node-test/issues"
+  },
+  "homepage": "https://github.com/m4k/node-test#readme"
+}
